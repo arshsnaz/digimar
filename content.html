@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainn">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>DigitalMarketing</h1>
+            </div>
+           <input type="checkbox" id="menu-toggle">
+            <label for="menu-items" class="menu-icon">&#9776;</label>
+           <ul class="menu-items">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="privacy.html">Privacy Policy</a></li>
+             <li><a href="Disclaimer.html">Disclaimer</a></li>
+           </ul>
+      </nav>
+    </div>
+    <div class="box">
+        <h1>Content Marketing</h1><br>
+    <p>Content marketing is a strategic marketing approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience. The ultimate goal of content marketing is to drive profitable customer action, such as purchasing a product, subscribing to a service, or engaging with a brand.</p>
+<br><br>
+    <h2>Key Elements of Content Marketing:</h2><br>
+    <ol>
+        <br><li><strong>Creation of Valuable Content:</strong> Content marketing begins with the creation of high-quality content that provides value to the target audience. This content can take various forms, including blog posts, articles, videos, infographics, podcasts, ebooks, whitepapers, webinars, and social media posts.</li>
+        <br><li><strong>Understanding the Audience:</strong> Successful content marketing requires a deep understanding of the target audience's needs, interests, preferences, and pain points. By knowing their audience well, marketers can create content that resonates with them and addresses their specific challenges or desires.</li>
+        <br><li><strong>Content Distribution:</strong> After creating valuable content, the next step is to distribute it through appropriate channels to reach the target audience effectively. Distribution channels may include a company website, blog, social media platforms, email newsletters, guest posting on other websites, content syndication platforms, and more.</li>
+        <br><li><strong>Building Brand Awareness and Authority:</strong> Content marketing helps build brand awareness by consistently delivering valuable content that educates, entertains, or inspires the audience. Over time, as the audience engages with the content and finds it valuable, trust and credibility are established, positioning the brand as an authority in its industry or niche.</li>
+        <br><li><strong>Driving Engagement and Relationships:</strong> Engaging content encourages audience interaction, such as likes, shares, comments, and discussions. Through active engagement, brands can foster relationships with their audience, building a loyal community of followers who are more likely to become customers or advocates for the brand.</li>
+        <br><li><strong>Generating Leads and Conversions:</strong> Content marketing serves as a powerful lead generation tool by attracting potential customers to the brand's website or other digital properties. By providing valuable content that addresses the audience's needs, marketers can capture leads through email sign-ups, gated content, or other conversion opportunities.</li>
+        <br><li><strong>Supporting the Customer Journey:</strong> Content marketing plays a crucial role throughout the customer journey, from awareness and consideration to purchase and retention. Marketers create content tailored to each stage of the buyer's journey, guiding prospects through the decision-making process and nurturing customer relationships post-purchase.</li>
+        <br><li><strong>Measuring and Analyzing Performance:</strong> Effective content marketing involves continuous monitoring and analysis of key performance metrics to evaluate the success of content efforts. Metrics may include website traffic, engagement metrics (likes, shares, comments), conversion rates, email open and click-through rates, social media metrics, and more.</li>
+        <br><li><strong>Iterative Improvement:</strong> Based on performance data and insights gathered, content marketing strategies can be refined and optimized over time to better resonate with the target audience and drive desired outcomes. This iterative process ensures that content remains relevant, effective, and aligned with business goals.</li>
+    </ol>
+    </div>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0f24;
+    color:#fff;
+    padding: 0px 80px ;
+}
+.logo h1{
+    font-size: 38px;
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+}
+.menu-items li{
+    margin-right: 20px;
+}
+.menu-items li:last-child{
+    margin-right: 0px;
+}
+.menu-items li a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+.menu-items li a:hover{
+    background-color: #21318a;
+}
+.menu-icon{
+    font-size: 25px;
+    display: none;
+}
+input{
+    display: none;
+
+}
+@media screen and (max-width:768px){
+    .menu-items{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100px;
+        background-color: #000222;
+        padding: 20px 35px;
+        display: none;
+    }
+    .menu-items li{
+        padding: 15px 0px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+        padding: 0px 40px;
+    }
+    input{
+        display: none;
+    }
+    input:checked ~ .menu-items{
+        display: flex;
+    }
+}
+img{
+    background-size: cover;
+}
+.hero{
+    height: 90vh;
+    background-image: url("GS.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero .content{
+    width: 700px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.hero .content h1{
+    margin-bottom: 20px;
+    font-size: 55px;
+    color:#fff
+}
+.hero .content p{
+    font-size: 25px;
+    color: #ffffff;
+}
+.btn{
+    font-size: 19px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 16px;
+    background-color: #0b0f24;
+    color:#ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.hero .content .btn:hover{
+    background-color: #45a049;
+}
+.cart{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: flex;
+}
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: hsl(195, 75%, 52%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: hsl(212, 42%, 15%);
+  --container-color: hsl(212, 42%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box{
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 60px;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+</style>
+</body>
+</html>

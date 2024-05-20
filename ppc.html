@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainn">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>DigitalMarketing</h1>
+            </div>
+           <input type="checkbox" id="menu-toggle">
+            <label for="menu-items" class="menu-icon">&#9776;</label>
+           <ul class="menu-items">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="privacy.html">Privacy Policy</a></li>
+             <li><a href="Disclaimer.html">Disclaimer</a></li>
+           </ul>
+      </nav>
+    </div>
+    <div class="box">
+        <h1>Pay-Per-Click (PPC) Advertising</h1><br><hr>
+   <br><br> <p>Pay-per-click (PPC) is an online advertising model in which advertisers pay a fee each time their ad is clicked. It's a way of buying visits to your site rather than attempting to earn those visits organically through methods like search engine optimization (SEO). PPC advertising platforms, such as Google Ads and Bing Ads, allow advertisers to bid for ad placement in a search engine's sponsored links when someone searches on a keyword related to their business offering.</p>
+
+    <br><br><h2>Key Aspects of PPC Advertising:</h2><br><hr><br><br>
+    <ol>
+        <li><strong>Ad Auction Process:</strong> When a user enters a search query into a search engine, the search engine runs an auction to determine which ads will appear in the search results page (SERP). The auction takes into account factors such as the ad's bid amount, ad quality, relevance to the search query, and expected click-through rate (CTR). Advertisers bid on keywords relevant to their target audience, and the highest bidder typically wins the top ad placement.</li>
+        <br><li><strong>Keyword Targeting:</strong> Keywords are the foundation of PPC advertising. Advertisers select relevant keywords and keyword phrases that align with their business offerings and target audience's search intent. Keyword research helps advertisers identify high-value keywords with sufficient search volume and manageable competition. Advertisers bid on these keywords to have their ads displayed when users search for those terms.</li>
+        <br><li><strong>Ad Creatives:</strong> Advertisers create compelling ad creatives that capture the attention of users and entice them to click on the ad. Ad creatives typically consist of a headline, description, and URL. They should be concise, relevant to the search query, and include a clear call-to-action (CTA) that encourages users to take the desired action, such as making a purchase, signing up for a newsletter, or requesting more information.</li>
+        <br><li><strong>Ad Extensions:</strong> Ad extensions are additional pieces of information that can be added to PPC ads to provide more context and increase visibility. Common ad extensions include site links (additional links to specific pages on the advertiser's website), call extensions (phone numbers that allow users to call the business directly from the ad), location extensions (displaying the advertiser's address and proximity to the user), and more.</li>
+        <br><li><strong>Bid Management:</strong> Advertisers set bid amounts, which represent the maximum amount they are willing to pay for a click on their ad. Bid management involves monitoring and adjusting bid amounts to achieve desired ad placement and performance goals while staying within budget. Advertisers may adjust bids based on factors such as keyword performance, competition, seasonality, and target audience behavior.</li>
+        <br><li><strong>Quality Score:</strong> Quality Score is a metric used by PPC advertising platforms to evaluate the relevance and quality of ads and landing pages. It's based on factors such as expected click-through rate, ad relevance, and landing page experience. A higher Quality Score can lead to higher ad positions and lower costs-per-click (CPC), as advertisers with higher Quality Scores are rewarded with better ad placement at lower costs.</li>
+        <br><li><strong>Conversion Tracking:</strong> Conversion tracking allows advertisers to measure the effectiveness of their PPC campaigns by tracking actions that are valuable to their business, such as purchases, sign-ups, downloads, or form submissions. By tracking conversions, advertisers can evaluate the ROI of their PPC campaigns, optimize their ad targeting and messaging, and allocate budget more effectively to maximize results.</li>
+        <br><li><strong>Budget Management:</strong> Advertisers set daily or monthly budgets to control how much they are willing to spend on their PPC campaigns. Budget management involves monitoring campaign spend, adjusting bid amounts, and allocating budget to high-performing keywords and campaigns. Advertisers can set bidding strategies to automatically adjust bids based on budget constraints and performance objectives.</li>
+        <br><li><strong>Continuous Optimization:</strong> PPC advertising requires ongoing monitoring and optimization to improve performance and achieve desired outcomes. Advertisers continuously analyze campaign metrics, such as click-through rates, conversion rates, cost-per-click, and return on ad spend (ROAS), to identify areas for improvement. Optimization tactics may include refining keyword targeting, testing ad creatives, adjusting bid strategies, and improving landing page experience.</li>
+    </ol>
+    </div>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0f24;
+    color:#fff;
+    padding: 0px 80px ;
+}
+.logo h1{
+    font-size: 38px;
+}
+.menu-items{
+    display: flex;
+    list-style: none;
+}
+.menu-items li{
+    margin-right: 20px;
+}
+.menu-items li:last-child{
+    margin-right: 0px;
+}
+.menu-items li a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+.menu-items li a:hover{
+    background-color: #21318a;
+}
+.menu-icon{
+    font-size: 25px;
+    display: none;
+}
+input{
+    display: none;
+
+}
+@media screen and (max-width:768px){
+    .menu-items{
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100px;
+        background-color: #000222;
+        padding: 20px 35px;
+        display: none;
+    }
+    .menu-items li{
+        padding: 15px 0px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+        padding: 0px 40px;
+    }
+    input{
+        display: none;
+    }
+    input:checked ~ .menu-items{
+        display: flex;
+    }
+}
+img{
+    background-size: cover;
+}
+.hero{
+    height: 90vh;
+    background-image: url("GS.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero .content{
+    width: 700px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.hero .content h1{
+    margin-bottom: 20px;
+    font-size: 55px;
+    color:#fff
+}
+.hero .content p{
+    font-size: 25px;
+    color: #ffffff;
+}
+.btn{
+    font-size: 19px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 16px;
+    background-color: #0b0f24;
+    color:#ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.hero .content .btn:hover{
+    background-color: #45a049;
+}
+.cart{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: flex;
+}
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: hsl(195, 75%, 52%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: hsl(212, 42%, 15%);
+  --container-color: hsl(212, 42%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box{
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 60px;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+</style>
+</body>
+</html>
